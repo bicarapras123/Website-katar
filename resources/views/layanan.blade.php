@@ -56,7 +56,7 @@
 
       <!-- Google Maps -->
       <div class="mt-20 rounded-xl overflow-hidden shadow-2xl">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1758005834419!5m2!1sid!2sid!6m8!1m7!1sK6Bk-kA96JWCSmvLH1GDSA!2m2!1d-6.188511663911896!2d106.7901814487078!3f252.98793755586377!4f2.161904232222142!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
 

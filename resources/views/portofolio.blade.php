@@ -128,7 +128,7 @@
 <!-- Card -->
 <article class="bg-white rounded-xl shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
   <!-- Gambar -->
-  <img src="https://picsum.photos/400/250" alt="Blog 1" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+  <img src="fotokatar6.jpg" alt="Blog 1" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
   
   <!-- Konten -->
   <div class="p-6 flex flex-col justify-between">
@@ -161,7 +161,7 @@
 
     <!-- Konten Modal -->
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Artikel Pertama Blog</h2>
-    <img src="https://picsum.photos/400/250" alt="Blog Detail" class="w-full h-56 object-cover rounded-lg mb-4">
+    <img src="fotokatar6.jpg" alt="Blog Detail" class="w-full h-56 object-cover rounded-lg mb-4">
     <p class="text-gray-600 leading-relaxed text-sm md:text-base">
       Ini adalah isi lengkap dari artikel pertama. Kamu bisa menuliskan detail penjelasan di sini dengan tampilan portrait,
       dan pembaca bisa menutup modal untuk kembali ke halaman utama.
@@ -180,7 +180,7 @@
 
 <!-- Card 2 -->
 <article class="bg-white rounded-xl shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
-  <img src="https://picsum.photos/401/250" alt="Blog 2" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+  <img src="fotokatar4.jpg" alt="Blog 2" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
   <div class="p-6 flex flex-col justify-between">
     <div>
       <span class="text-sm text-yellow-500 font-medium uppercase">Berita</span>
@@ -208,7 +208,7 @@
       ✕
     </button>
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Artikel Kedua Blog</h2>
-    <img src="https://picsum.photos/401/250" alt="Blog Detail" class="w-full h-56 object-cover rounded-lg mb-4">
+    <img src="fotokatar4.jpg" alt="Blog Detail" class="w-full h-56 object-cover rounded-lg mb-4">
     <p class="text-gray-600 leading-relaxed text-sm md:text-base">
       Ini adalah isi lengkap dari artikel kedua. Kamu bisa menuliskan detail penjelasan di sini dengan tampilan portrait.
     </p>
@@ -217,7 +217,7 @@
 
 <!-- Card 3 -->
 <article class="bg-white rounded-xl shadow-md flex flex-col md:flex-row overflow-hidden hover:shadow-lg transition">
-  <img src="https://picsum.photos/402/250" alt="Blog 3" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
+  <img src="fotokatar5.jpg" alt="Blog 3" class="w-full md:w-1/3 h-48 md:h-auto object-cover">
   <div class="p-6 flex flex-col justify-between">
     <div>
       <span class="text-sm text-yellow-500 font-medium uppercase">Opini</span>
@@ -245,7 +245,7 @@
       ✕
     </button>
     <h2 class="text-2xl font-bold text-gray-800 mb-4">Artikel Ketiga Blog</h2>
-    <img src="https://picsum.photos/402/250" alt="Blog Detail" class="w-full h-56 object-cover rounded-lg mb-4">
+    <img src="fotokatar5.jpg" alt="Blog Detail" class="w-full h-56 object-cover rounded-lg mb-4">
     <p class="text-gray-600 leading-relaxed text-sm md:text-base">
       Ini adalah isi lengkap dari artikel ketiga. Kamu bisa menuliskan detail penjelasan di sini dengan tampilan portrait.
     </p>

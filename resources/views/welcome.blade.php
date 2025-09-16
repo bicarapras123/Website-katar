@@ -40,15 +40,26 @@
 </header>
 
 
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center">
-        <!-- Background -->
-        <div class="absolute inset-0">
-            <img src="https://picsum.photos/1920/1080?blur=3" 
-                 alt="background" 
-                 class="w-full h-full object-cover opacity-100">
-            <div class="absolute inset-0 bg-gradient-to-b from-[#0b0d2a]/80 to-[#0b0d2a]"></div>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Slider -->
+    <div class="absolute inset-0">
+        <div id="slider" class="w-full h-full relative">
+            <!-- Slide 1 -->
+            <img src="fotokatar2.jpg" 
+                 alt="background 1" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000 slide">
+            <!-- Slide 2 -->
+            <img src="fotokatar7.jpg" 
+                 alt="background 2" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 slide">
+            <!-- Slide 3 -->
+            <img src="fotokatar8.jpg" 
+                 alt="background 3" 
+                 class="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000 slide">
         </div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#0b0d2a]/80 to-[#0b0d2a]"></div>
+    </div>
 
         <!-- Content -->
         <div class="relative z-10 text-center max-w-3xl px-6">
@@ -56,12 +67,11 @@
             KARANG TARUNA RW.008
             </h1>
             <p class="text-lg md:text-xl font-light mb-2 tracking-wide">
-                ADAPTIVE . INNOVATIVE . REVOLUTIONARY
+                SMART . INNOVATIVE . REVOLUTIONARY
             </p>
             <p class="mt-6 text-gray-300 leading-relaxed">
-                SDA Muda adalah forum independen bagi SDA muda Ditjen SDA untuk berkontribusi, 
-                memperluas jaringan, dan meningkatkan kompetensi dengan prinsip iProVe dan gerakan AIR. 
-                Forum ini menjadi wadah transfer pengetahuan dan jembatan antargenerasi di sektor sumber daya air.
+            Karang Taruna adalah organisasi sosial kemasyarakatan yang menjadi wadah dan sarana bagi generasi muda untuk mengembangkan diri, berdasar atas kesadaran dan tanggung jawab sosial dari, oleh, dan untuk masyarakat di wilayah desa/kelurahan, dengan tujuan utama mengantisipasi masalah kesejahteraan sosial 
+            dan mendorong pertumbuhan masyarakat yang berkualitas, cerdas, dan inovatif.
             </p>
             <a href="#kontak" class="mt-8 inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
                 Hubungi Kami
@@ -69,6 +79,22 @@
         </div>
     </section>
 
+    <script>
+    const slides = document.querySelectorAll("#slider .slide");
+    let currentSlide = 0;
+
+    function showNextSlide() {
+        slides[currentSlide].classList.remove("opacity-100");
+        slides[currentSlide].classList.add("opacity-0");
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.remove("opacity-0");
+        slides[currentSlide].classList.add("opacity-100");
+    }
+
+    setInterval(showNextSlide, 4000); // ganti slide setiap 4 detik
+</script>
 <!-- Floating Buttons -->
 <div class="fixed bottom-6 right-6 flex flex-col gap-4 z-50">
 
@@ -91,7 +117,7 @@
             <!-- Gambar -->
             <div class="relative">
                 <div class="bg-white shadow-xl rounded-2xl p-4">
-                    <img src="{{ asset('logokatar.png') }}" alt="Tentang SDA Muda" class="rounded-xl">
+                    <img src="{{ asset('fotokatar1.jpg') }}" alt="Tentang SDA Muda" class="rounded-xl">
                 </div>
                 <!-- Logo kecil di pojok -->
                 <div class="absolute -bottom-6 -left-6 bg-[#0b0d2a] p-3 rounded-xl shadow-lg">
@@ -101,20 +127,24 @@
 
             <!-- Konten -->
             <div>
-                <span class="text-sm tracking-widest text-yellow-500 font-semibold uppercase">About Us</span>
-                <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 text-[#0b0d2a]">SDA MUDA</h2>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    SDA Muda adalah forum independen dan non-formal bagi SDA muda di lingkungan Direktorat Jenderal Sumber Daya Air untuk memberikan kontribusi nyata di bidang sosial, pengembangan diri, ilmu pengetahuan, dan teknologi.
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Forum ini didirikan oleh para SDA muda di Direktorat Jenderal Sumber Daya Air untuk memperluas jaringan dan meningkatkan kompetensi mereka dengan berlandaskan prinsip iProVe (nilai-nilai Kementerian Pekerjaan Umum dan Perumahan Rakyat) melalui gerakan seperti AIR (Adaptive, Innovative, and Revolutionary).
-                </p>
-                <p class="text-gray-600 leading-relaxed mb-4">
-                    Anggota SDA Muda terdiri dari seluruh pegawai Direktorat Jenderal Sumber Daya Air – Kementerian Pekerjaan Umum dan Perumahan Rakyat (Pegawai Negeri Sipil, Non-Pegawai Negeri Sipil, dan Konsultan Individu) yang memiliki semangat muda.
-                </p>
-                <p class="text-gray-600 leading-relaxed">
-                    SDA Muda diharapkan dapat menjadi jembatan yang mempersempit kesenjangan antar generasi, serta menjadi wadah untuk transfer pengetahuan dan berbagi pengalaman.
-                </p>
+            <span class="text-sm tracking-widest text-yellow-500 font-semibold uppercase">About Us</span>
+            <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-6 text-[#0b0d2a]">KARANG TARUNA RW.008</h2>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Karang Taruna RW.008 adalah organisasi kepemudaan yang menjadi wadah pengembangan generasi muda di tingkat lingkungan RW.008. 
+                Organisasi ini hadir sebagai ruang kebersamaan, kreativitas, dan pengabdian untuk mendukung pembangunan sosial serta meningkatkan kualitas hidup masyarakat.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Dengan semangat gotong royong dan solidaritas, Karang Taruna RW.008 aktif mengadakan kegiatan sosial, budaya, olahraga, serta pelatihan kewirausahaan. 
+                Hal ini bertujuan untuk memperkuat rasa persaudaraan antarwarga sekaligus menumbuhkan jiwa kepemimpinan dan kemandirian pada para pemuda.
+            </p>
+            <p class="text-gray-600 leading-relaxed mb-4">
+                Anggota Karang Taruna RW.008 adalah para pemuda dan remaja di lingkungan RW.008 yang memiliki tekad untuk berkontribusi nyata bagi kemajuan bersama. 
+                Mereka tidak hanya menjadi motor penggerak kegiatan kepemudaan, tetapi juga mitra penting masyarakat dan pemerintah dalam membangun lingkungan yang lebih harmonis dan berdaya.
+            </p>
+            <p class="text-gray-600 leading-relaxed">
+                Karang Taruna RW.008 diharapkan dapat menjadi garda terdepan dalam menjawab tantangan zaman, menjadi jembatan antar generasi, serta melahirkan generasi muda yang adaptif, inovatif, dan berkarakter.
+            </p>
+
             </div>
         </div>
     </section>
@@ -270,12 +300,12 @@
 <!-- Blog Header -->
 <section class="relative h-72 flex items-center justify-center text-center text-white">
     <div class="absolute inset-0">
-        <img src="https://picsum.photos/1920/1080?grayscale" alt="Blog Header" 
+        <img src="fotokatar3.jpg" alt="Blog Header" 
              class="w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/70"></div>
     </div>
     <div class="relative z-10">
-        <h1 class="text-4xl md:text-5xl font-bold">BLOG</h1>
+        <h1 class="text-4xl md:text-5xl font-bold">PROGRAM</h1>
         <div class="mt-2 w-16 h-1 bg-yellow-500 mx-auto"></div>
         <p class="mt-4 text-yellow-400"><a href="#">Home</a> &raquo; Blog</p>
     </div>
@@ -288,7 +318,7 @@
             
             <!-- Card 1 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-                <img src="https://picsum.photos/400/250" alt="Blog 1" class="w-full h-48 object-cover">
+                <img src="fotokatar6.jpg" alt="Blog 1" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <span class="text-sm text-yellow-500 font-medium uppercase">Event</span>
                     <h3 class="text-lg font-bold mt-2 text-gray-800 hover:text-yellow-600 transition">
@@ -297,7 +327,7 @@
                     <p class="mt-3 text-sm text-gray-600 leading-relaxed">
                         Ini adalah contoh deskripsi singkat dari blog yang akan menarik pembaca untuk klik dan membaca lebih lanjut.
                     </p>
-                    <a href="#" class="mt-4 inline-block text-yellow-600 font-semibold hover:underline">
+                    <a href="portofolio" class="mt-4 inline-block text-yellow-600 font-semibold hover:underline">
                         Baca Selengkapnya →
                     </a>
                 </div>
@@ -305,7 +335,7 @@
 
             <!-- Card 2 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-                <img src="https://picsum.photos/401/250" alt="Blog 2" class="w-full h-48 object-cover">
+                <img src="fotokatar4.jpg" alt="Blog 2" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <span class="text-sm text-yellow-500 font-medium uppercase">Kegiatan</span>
                     <h3 class="text-lg font-bold mt-2 text-gray-800 hover:text-yellow-600 transition">
@@ -322,7 +352,7 @@
 
             <!-- Card 3 -->
             <article class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
-                <img src="https://picsum.photos/402/250" alt="Blog 3" class="w-full h-48 object-cover">
+                <img src="fotokatar5.jpg" alt="Blog 3" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <span class="text-sm text-yellow-500 font-medium uppercase">Inspirasi</span>
                     <h3 class="text-lg font-bold mt-2 text-gray-800 hover:text-yellow-600 transition">
